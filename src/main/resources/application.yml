@@ -1,0 +1,12 @@
+spring:
+  cache:
+    caffeine:
+      spec: maximumSize=500,expireAfterWrite=10m
+  datasource:
+    url: jdbc:mysql://localhost:3306/pokemon_db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
