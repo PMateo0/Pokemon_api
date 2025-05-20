@@ -7,12 +7,20 @@ import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @TestConfiguration(proxyBeanMethods = false)
-class TestcontainersConfiguration {
+public class TestcontainersConfiguration {
 
 	@Bean
 	@ServiceConnection
-	MySQLContainer<?> mysqlContainer() {
-		return new MySQLContainer<>(DockerImageName.parse("mysql:latest"));
+	public MySQLContainer<?> mysqlContainer() {
+		MySQLContainer<?> container = new MySQLContainer<>(
+				DockerImageName.parse("mysql:8.0.33")
+		)
+				.withDatabaseName("pokemon_db")
+				.withUsername("root")
+				.withPassword("root");
+		container.start();
+		return container;
 	}
 
 }
+
