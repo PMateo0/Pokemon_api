@@ -1,1 +1,3 @@
-[![codecov](https://codecov.io/gh/PMateo0/Pokemon_api/graph/badge.svg?token=965V01ZSMR)]
+![Build](https://github.com/TU_USUARIO/pokemon-api/actions/workflows/CI.yml/badge.svg)
+![Coverage](https://img.shields.io/codecov/c/github/TU_USUARIO/pokemon-api.svg?style=flat)
+
