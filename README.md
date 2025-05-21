@@ -1,1 +1,1 @@
-[![codecov](https://codecov.io/gh/PMateo0/pyscriptSopitafy/graph/badge.svg?token=FVE5LONGBT)](https://codecov.io/gh/PMateo0/pyscriptSopitafy)
+[![codecov](https://codecov.io/gh/PMateo0/Pokemon_api/graph/badge.svg?token=965V01ZSMR)]
